@@ -167,6 +167,10 @@ bot.on("message", async (msg) => {
   }
 });
 
+app.get("/", (req, res)=>{
+  res.send("Alive")
+})
+
 // Start Express server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
