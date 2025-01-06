@@ -8,7 +8,7 @@ const fs = require("fs");
 const path = require("path");
 
 // Initialize Firebase Admin SDK
-const serviceAccount = require("./serviceAccountKey.json");
+const serviceAccount = require("/etc/secrets/serviceAccountKey.json");
 firebaseAdmin.initializeApp({
   credential: firebaseAdmin.credential.cert(serviceAccount),
   storageBucket: "image-upload-51e97.appspot.com",
